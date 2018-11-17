@@ -10,8 +10,8 @@
 
 
 
-      <p>Username: <%= Helpers.current_user(session).username %></p>
-      <p>Balance: <%= Helpers.current_user(session).balance %></p>
+      <p>Welcome <%= Helpers.current_user(session).username %></p>
+      <p>Your Balance: <%= Helpers.current_user(session).balance %></p>
       <a href="/logout">Log Out</a>
 
       <a href="/">Home Page</a>
