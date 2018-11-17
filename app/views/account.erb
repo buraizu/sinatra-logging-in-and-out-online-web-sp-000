@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<% require 'pry'%>
 <html>
   <head>
     <meta charset="UTF-8">
@@ -7,6 +8,7 @@
   </head>
   <body id="page-top">
     <% helper = Helpers.new %>
+    <% binding.pry %>
     <% if helper.is_logged_in? == true %>
       <p>Username: <%= helper.current_user.username %></p>
       <p>Balance: <%= helper.current_user.balance %></p>
