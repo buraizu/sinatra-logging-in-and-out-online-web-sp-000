@@ -9,7 +9,11 @@
     <% if is_logged_in?(session) == true %>
 
     <p>Username: <%= current_user.username %></p>
+<<<<<<< HEAD
     <p>Balance: <%= @user.balance %></p>
+=======
+    <p>Balance: <%= current_user.balance %></p>
+>>>>>>> 54a87f1fb0f0709648a78e06bab85bf6df756151
     <a href="/logout">Log Out</a>
     <% else %>
     <a href="/">Home Page</a>

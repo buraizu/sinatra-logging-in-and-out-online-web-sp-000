@@ -21,7 +21,6 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/account' do
-    
     erb :account
   end
 
@@ -29,6 +28,4 @@ class ApplicationController < Sinatra::Base
     session.clear
     redirect to '/'
   end
-
-
 end
