@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css">
   </head>
   <body id="page-top">
-    <% helper = Helpers.new %>
-    <% binding.pry %>
-    <% if helper.is_logged_in? == true %>
+
+    # <% binding.pry %>
+    <% if Helpers.new.is_logged_in? == true %>
       <p>Username: <%= helper.current_user.username %></p>
       <p>Balance: <%= helper.current_user.balance %></p>
       <a href="/logout">Log Out</a>
