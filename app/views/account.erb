@@ -8,7 +8,7 @@
   </head>
   <body id="page-top">
 
-    <% helper = Helper.new %>
+    <% helper = Helpers.new %>
     <% binding.pry %>
     <% if helper.is_logged_in? == true %>
       <p>Username: <%= helper.current_user.username %></p>
